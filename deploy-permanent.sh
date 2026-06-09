@@ -37,7 +37,7 @@ git config user.email "burak.uzkent@amd.com"
 if [ -z "$(git status --porcelain 2>/dev/null)" ] && [ -n "$(git rev-parse HEAD 2>/dev/null)" ]; then
   :
 elif ! git rev-parse HEAD >/dev/null 2>&1; then
-  git add index.html optimization.html hitl-debugging.html .nojekyll SHARE.md deploy-permanent.sh
+  git add index.html optimization.html hitl-debugging.html multimodal.html .nojekyll SHARE.md deploy-permanent.sh
   git commit -m "Add Staff AI Research Scientist job descriptions (two variants)"
 else
   git add -A
