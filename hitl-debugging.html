@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AMD Staff AI Research Scientist — Slow HITL Debugging</title>
+  <meta name="description" content="Staff AI Research Scientist job description — slow human-in-the-loop reward debugging in AMD hardware generation.">
+  <meta name="robots" content="noindex, nofollow">
+  <style>
+    :root {
+      --bg: #0b0f14;
+      --accent: #fbbf24;
+      --accent2: #38bdf8;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --border: #2a3a52;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.55;
+      min-height: 100vh;
+    }
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 1.25rem 2rem;
+      background: rgba(11, 15, 20, 0.92);
+    }
+    header h1 { font-size: 1.35rem; font-weight: 700; letter-spacing: -0.02em; }
+    header p { color: var(--muted); font-size: 0.9rem; margin-top: 0.35rem; }
+    header a { color: var(--accent2); }
+    main { max-width: 720px; margin: 0 auto; padding: 2rem 2rem 3rem; }
+    .jd-section { margin-bottom: 2rem; }
+    .jd-section h2 {
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--accent);
+      margin-bottom: 0.6rem;
+    }
+    .jd-section p { font-size: 0.95rem; }
+    .jd-section ul { margin: 0.35rem 0 0 1.1rem; font-size: 0.95rem; }
+    .jd-section li { margin-top: 0.4rem; }
+    .actions {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid var(--border);
+    }
+    .btn {
+      appearance: none;
+      border: 1px solid rgba(56, 189, 248, 0.45);
+      background: rgba(56, 189, 248, 0.12);
+      color: #7dd3fc;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.55rem 1rem;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    .btn:hover { border-color: var(--accent2); }
+    .toast {
+      position: fixed;
+      bottom: 1.25rem;
+      right: 1.25rem;
+      background: var(--accent);
+      color: #1e1033;
+      font-size: 0.85rem;
+      font-weight: 600;
+      padding: 0.6rem 1rem;
+      border-radius: 8px;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.2s ease;
+    }
+    .toast.show { opacity: 1; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Staff AI Research Scientist</h1>
+    <p>
+      Variant B — Slow HITL debugging · Santa Clara, CA ·
+      <a href="optimization.html">Variant A (verifiable optimization)</a>
+    </p>
+  </header>
+
+  <main>
+    <section class="jd-section">
+      <h2>The Role</h2>
+      <p>We are hiring a highly technical and creative AI Research Scientist to join our AI team. You will investigate and advance the state of the art in generative AI, with a focus on <strong>debugging workflows where verification is human-in-the-loop only and reward is slow</strong>. A central mandate of this role is to solve <strong>learning under sparse, delayed expert feedback</strong> in AMD's hardware generation process—researching methods that accelerate diagnosis and fix proposal while making every scarce human judgment count, and translating that research into practical tools embedded in real debugging workflows.</p>
+    </section>
+
+    <section class="jd-section">
+      <h2>The Person</h2>
+      <p>You are drawn to problems where <strong>reward is slow and expert feedback is the bottleneck</strong>—where you cannot iterate at standard ML speed because each training signal depends on a scarce human confirmation. You think in terms of sample efficiency, query selection, and extracting maximum learning from minimal expert time. You care about trust, calibration, and when an AI assistant should escalate rather than consume expert attention on low-value hypotheses. You enjoy working alongside domain experts, stay current with developments in generative AI and human-in-the-loop methods, and communicate clearly in papers, talks, and demos.</p>
+    </section>
+
+    <section class="jd-section">
+      <h2>Key Responsibilities</h2>
+      <ul>
+        <li>Research methods for learning under slow HITL reward—the core problem of improving AI debugging assistants when expert verification is the only valid signal and feedback is sparse, delayed, and expensive (for example: sample-efficient RLHF, active learning, reward modeling from scarce judgments, and query strategies that prioritize high-value expert reviews)</li>
+        <li>Characterize human-in-the-loop debugging workflows in AMD's hardware generation process—mapping where automation ends, what experts must verify, how long feedback takes, and what signals are available before human confirmation</li>
+        <li>Research AI methods for expert-assisted debugging under human-only verification (for example: hypothesis generation, trace and log summarization, candidate fix ranking, and interactive refinement loops designed to minimize expert burden per iteration)</li>
+        <li>Design evaluation protocols for the slow-reward regime—measuring learning progress per expert hour, hypothesis quality, fix acceptance rates, and escalation accuracy; rejecting metrics that assume fast or abundant automated feedback</li>
+        <li>Build and study prototypes embedded in realistic debugging workflows, with structured feedback loops from hardware design, verification, and automation engineers</li>
+        <li>Publish and present findings at top-tier venues and contribute to internal knowledge sharing around AI-assisted debugging and learning from sparse expert feedback</li>
+      </ul>
+    </section>
+
+    <section class="jd-section">
+      <h2>Preferred Experience</h2>
+      <ul>
+        <li>Track record of publications at top-tier venues (for example: NeurIPS, ICLR, ICML, AAAI, CVPR, ICCV, ECCV, or similar)</li>
+        <li>Demonstrated experience with learning from slow, sparse, or expensive human feedback—for example: RLHF with limited label budgets, active learning, or expert-in-the-loop evaluation</li>
+        <li>Demonstrated experience with human-in-the-loop ML or interactive AI systems where automated verification is unavailable or unreliable</li>
+        <li>Experience debugging or supporting debugging in complex engineering systems—for example: hardware generation workflows, design automation pipelines, or large-scale pre-silicon engineering codebases</li>
+        <li>Experience working closely with domain experts to define tasks, collect judgments, and iterate on AI-assisted workflows</li>
+        <li>Demonstrated experience training and applying LLMs and code models to root-cause analysis, trace interpretation, or iterative fix proposal</li>
+        <li>Proven ability to communicate complex technical ideas through papers, presentations, demos, and written content</li>
+      </ul>
+    </section>
+
+    <section class="jd-section">
+      <h2>Academic Credentials</h2>
+      <ul>
+        <li>Bachelor's degree in Computer Science, Computer Engineering, Electrical Engineering, or related field.</li>
+        <li>PhD in Computer Science, Machine Learning, Electrical Engineering, or a related field strongly preferred. Master's with an exceptional publication record in generative AI, human-in-the-loop ML, AI for code, design automation, or AI for hardware engineering will be considered.</li>
+      </ul>
+    </section>
+
+    <div class="actions">
+      <button type="button" class="btn" id="copyBtn">Copy full JD</button>
+    </div>
+  </main>
+
+  <div class="toast" id="toast" role="status" aria-live="polite">Copied</div>
+
+  <script>
+    const copyText = `Staff AI Research Scientist
+Santa Clara, CA
+
+THE ROLE
+We are hiring a highly technical and creative AI Research Scientist to join our AI team. You will investigate and advance the state of the art in generative AI, with a focus on debugging workflows where verification is human-in-the-loop only and reward is slow. A central mandate of this role is to solve learning under sparse, delayed expert feedback in AMD's hardware generation process—researching methods that accelerate diagnosis and fix proposal while making every scarce human judgment count, and translating that research into practical tools embedded in real debugging workflows.
+
+THE PERSON
+You are drawn to problems where reward is slow and expert feedback is the bottleneck—where you cannot iterate at standard ML speed because each training signal depends on a scarce human confirmation. You think in terms of sample efficiency, query selection, and extracting maximum learning from minimal expert time. You care about trust, calibration, and when an AI assistant should escalate rather than consume expert attention on low-value hypotheses. You enjoy working alongside domain experts, stay current with developments in generative AI and human-in-the-loop methods, and communicate clearly in papers, talks, and demos.
+
+KEY RESPONSIBILITIES
+• Research methods for learning under slow HITL reward—the core problem of improving AI debugging assistants when expert verification is the only valid signal and feedback is sparse, delayed, and expensive (for example: sample-efficient RLHF, active learning, reward modeling from scarce judgments, and query strategies that prioritize high-value expert reviews)
+• Characterize human-in-the-loop debugging workflows in AMD's hardware generation process—mapping where automation ends, what experts must verify, how long feedback takes, and what signals are available before human confirmation
+• Research AI methods for expert-assisted debugging under human-only verification (for example: hypothesis generation, trace and log summarization, candidate fix ranking, and interactive refinement loops designed to minimize expert burden per iteration)
+• Design evaluation protocols for the slow-reward regime—measuring learning progress per expert hour, hypothesis quality, fix acceptance rates, and escalation accuracy; rejecting metrics that assume fast or abundant automated feedback
+• Build and study prototypes embedded in realistic debugging workflows, with structured feedback loops from hardware design, verification, and automation engineers
+• Publish and present findings at top-tier venues and contribute to internal knowledge sharing around AI-assisted debugging and learning from sparse expert feedback
+
+PREFERRED EXPERIENCE
+• Track record of publications at top-tier venues (for example: NeurIPS, ICLR, ICML, AAAI, CVPR, ICCV, ECCV, or similar)
+• Demonstrated experience with learning from slow, sparse, or expensive human feedback—for example: RLHF with limited label budgets, active learning, or expert-in-the-loop evaluation
+• Demonstrated experience with human-in-the-loop ML or interactive AI systems where automated verification is unavailable or unreliable
+• Experience debugging or supporting debugging in complex engineering systems—for example: hardware generation workflows, design automation pipelines, or large-scale pre-silicon engineering codebases
+• Experience working closely with domain experts to define tasks, collect judgments, and iterate on AI-assisted workflows
+• Demonstrated experience training and applying LLMs and code models to root-cause analysis, trace interpretation, or iterative fix proposal
+• Proven ability to communicate complex technical ideas through papers, presentations, demos, and written content
+
+ACADEMIC CREDENTIALS
+• Bachelor's degree in Computer Science, Computer Engineering, Electrical Engineering, or related field.
+• PhD in Computer Science, Machine Learning, Electrical Engineering, or a related field strongly preferred. Master's with an exceptional publication record in generative AI, human-in-the-loop ML, AI for code, design automation, or AI for hardware engineering will be considered.`;
+
+    const toast = document.getElementById('toast');
+    document.getElementById('copyBtn').addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(copyText);
+      } catch {
+        const ta = document.createElement('textarea');
+        ta.value = copyText;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand('copy');
+        ta.remove();
+      }
+      toast.classList.add('show');
+      setTimeout(() => toast.classList.remove('show'), 2200);
+    });
+  </script>
+</body>
+</html>
