@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AMD Staff AI Research Scientist — Slow HITL Debugging</title>
-  <meta name="description" content="Staff AI Research Scientist job description — slow human-in-the-loop reward debugging in AMD hardware generation.">
+  <title>Staff AI Research Scientist — Slow HITL Debugging</title>
+  <meta name="description" content="Staff AI Research Scientist job description — slow human-in-the-loop reward debugging.">
   <meta name="robots" content="noindex, nofollow">
   <style>
     :root {
@@ -83,43 +83,42 @@
     <h1>Staff AI Research Scientist</h1>
     <p>
       Variant B — Slow HITL debugging · Santa Clara, CA ·
-      <a href="optimization.html">Variant A</a> ·
-      <a href="multimodal.html">Variant C</a>
+      <a href="optimization.html">Variant A (verifiable optimization)</a>
     </p>
   </header>
 
   <main>
     <section class="jd-section">
       <h2>The Role</h2>
-      <p>We are hiring a highly technical and creative AI Research Scientist to join our AI team. You will investigate and advance the state of the art in generative AI, with a focus on <strong>debugging workflows where verification is human-in-the-loop only and reward is slow</strong>. A central mandate of this role is to solve <strong>learning under sparse, delayed expert feedback</strong> in AMD's hardware generation process—researching methods that accelerate diagnosis and fix proposal while making every scarce human judgment count, and translating that research into practical tools embedded in real debugging workflows.</p>
+      <p>We are hiring a highly technical and creative AI Research Scientist to join our AI team. You will investigate and advance the state of the art in generative AI, with a focus on <strong>debugging workflows where verification is human-in-the-loop only and reward is slow</strong>. A central mandate of this role is to solve <strong>learning under sparse, delayed expert feedback</strong>—researching methods that accelerate diagnosis and fix proposal while making every scarce human judgment count, and translating that research into practical tools embedded in real engineering workflows.</p>
     </section>
 
     <section class="jd-section">
       <h2>The Person</h2>
-      <p>You are drawn to problems where <strong>reward is slow and expert feedback is the bottleneck</strong>—where you cannot iterate at standard ML speed because each training signal depends on a scarce human confirmation. You think in terms of sample efficiency, query selection, and extracting maximum learning from minimal expert time. You care about trust, calibration, and when an AI assistant should escalate rather than consume expert attention on low-value hypotheses. You enjoy working alongside domain experts, stay current with developments in generative AI and human-in-the-loop methods, and communicate clearly in papers, talks, and demos.</p>
+      <p>You are drawn to problems where <strong>expert feedback is the bottleneck</strong>—reward is slow, sparse, and cannot be replaced by automated labels. You think in terms of sample efficiency, query selection, and extracting maximum learning from minimal expert time. You care about trust, calibration, and when an AI assistant should escalate rather than consume expert attention on low-value hypotheses. You enjoy working alongside domain experts, stay current with developments in generative AI and human-in-the-loop methods, and communicate clearly in papers, talks, and demos.</p>
     </section>
 
     <section class="jd-section">
       <h2>Key Responsibilities</h2>
       <ul>
-        <li>Research methods for learning under slow HITL reward—the core problem of improving AI debugging assistants when expert verification is the only valid signal and feedback is sparse, delayed, and expensive (for example: sample-efficient RLHF, active learning, reward modeling from scarce judgments, and query strategies that prioritize high-value expert reviews)</li>
-        <li>Characterize human-in-the-loop debugging workflows in AMD's hardware generation process—mapping where automation ends, what experts must verify, how long feedback takes, and what signals are available before human confirmation</li>
-        <li>Research AI methods for expert-assisted debugging under human-only verification (for example: hypothesis generation, trace and log summarization, candidate fix ranking, and interactive refinement loops designed to minimize expert burden per iteration)</li>
-        <li>Design evaluation protocols for the slow-reward regime—measuring learning progress per expert hour, hypothesis quality, fix acceptance rates, and escalation accuracy; rejecting metrics that assume fast or abundant automated feedback</li>
-        <li>Build and study prototypes embedded in realistic debugging workflows, with structured feedback loops from hardware design, verification, and automation engineers</li>
-        <li>Publish and present findings at top-tier venues and contribute to internal knowledge sharing around AI-assisted debugging and learning from sparse expert feedback</li>
+        <li>Research methods for learning under slow human-in-the-loop reward—improving AI debugging assistants when expert verification is the only valid signal and feedback is sparse, delayed, and expensive</li>
+        <li>Characterize human-in-the-loop debugging workflows—mapping where automation ends, what experts must verify, how long feedback takes, and what signals are available before human confirmation</li>
+        <li>Research AI methods for expert-assisted debugging under human-only verification (for example: hypothesis generation, summarization, candidate fix ranking, and interactive refinement)</li>
+        <li>Design evaluation protocols for the slow-reward regime—measuring learning progress per expert hour and fix acceptance rates; rejecting metrics that assume fast or abundant automated feedback</li>
+        <li>Build and study prototypes embedded in realistic workflows, with structured feedback loops from domain experts and engineering partners</li>
+        <li>Publish and present findings at top-tier venues and contribute to internal knowledge sharing around AI-assisted debugging</li>
       </ul>
     </section>
 
     <section class="jd-section">
       <h2>Preferred Experience</h2>
       <ul>
-        <li>Track record of publications at top-tier venues (for example: NeurIPS, ICLR, ICML, AAAI, CVPR, ICCV, ECCV, or similar)</li>
+        <li>Track record of publications at top-tier venues (for example: NeurIPS, ICLR, ICML, AAAI, or similar)</li>
         <li>Demonstrated experience with learning from slow, sparse, or expensive human feedback—for example: RLHF with limited label budgets, active learning, or expert-in-the-loop evaluation</li>
         <li>Demonstrated experience with human-in-the-loop ML or interactive AI systems where automated verification is unavailable or unreliable</li>
-        <li>Experience debugging or supporting debugging in complex engineering systems—for example: hardware generation workflows, design automation pipelines, or large-scale pre-silicon engineering codebases</li>
+        <li>Experience debugging or supporting debugging in complex engineering systems</li>
         <li>Experience working closely with domain experts to define tasks, collect judgments, and iterate on AI-assisted workflows</li>
-        <li>Demonstrated experience training and applying LLMs and code models to root-cause analysis, trace interpretation, or iterative fix proposal</li>
+        <li>Demonstrated experience training and applying LLMs and code models to root-cause analysis or iterative fix proposal</li>
         <li>Proven ability to communicate complex technical ideas through papers, presentations, demos, and written content</li>
       </ul>
     </section>
@@ -128,15 +127,15 @@
       <h2>Academic Credentials</h2>
       <ul>
         <li>Bachelor's degree in Computer Science, Computer Engineering, Electrical Engineering, or related field.</li>
-        <li>PhD in Computer Science, Machine Learning, Electrical Engineering, or a related field strongly preferred. Master's with an exceptional publication record in generative AI, human-in-the-loop ML, AI for code, design automation, or AI for hardware engineering will be considered.</li>
+        <li>PhD in Computer Science, Machine Learning, or a related field strongly preferred. Master's with an exceptional publication record in generative AI, human-in-the-loop ML, or AI for code will be considered.</li>
       </ul>
     </section>
 
     <section class="jd-section">
       <h2>Outcomes</h2>
-      <p>Success in this role is measured by measurable reduction in expert burden across debugging and verification workflows:</p>
+      <p>Success in this role is measured by reducing expert burden on debugging and verification:</p>
       <ul>
-        <li><strong>Human debugging and verification</strong> — shorten the time experts spend on debugging and verification tasks by 50%, while maintaining correctness under human-in-the-loop verification</li>
+        <li><strong>Expert workflows</strong> — shorten expert time on debugging and verification by 50%, while maintaining correctness under human-in-the-loop verification</li>
       </ul>
     </section>
 
@@ -152,35 +151,35 @@
 Santa Clara, CA
 
 THE ROLE
-We are hiring a highly technical and creative AI Research Scientist to join our AI team. You will investigate and advance the state of the art in generative AI, with a focus on debugging workflows where verification is human-in-the-loop only and reward is slow. A central mandate of this role is to solve learning under sparse, delayed expert feedback in AMD's hardware generation process—researching methods that accelerate diagnosis and fix proposal while making every scarce human judgment count, and translating that research into practical tools embedded in real debugging workflows.
+We are hiring a highly technical and creative AI Research Scientist to join our AI team. You will investigate and advance the state of the art in generative AI, with a focus on debugging workflows where verification is human-in-the-loop only and reward is slow. A central mandate of this role is to solve learning under sparse, delayed expert feedback—researching methods that accelerate diagnosis and fix proposal while making every scarce human judgment count, and translating that research into practical tools embedded in real engineering workflows.
 
 THE PERSON
-You are drawn to problems where reward is slow and expert feedback is the bottleneck—where you cannot iterate at standard ML speed because each training signal depends on a scarce human confirmation. You think in terms of sample efficiency, query selection, and extracting maximum learning from minimal expert time. You care about trust, calibration, and when an AI assistant should escalate rather than consume expert attention on low-value hypotheses. You enjoy working alongside domain experts, stay current with developments in generative AI and human-in-the-loop methods, and communicate clearly in papers, talks, and demos.
+You are drawn to problems where expert feedback is the bottleneck—reward is slow, sparse, and cannot be replaced by automated labels. You think in terms of sample efficiency, query selection, and extracting maximum learning from minimal expert time. You care about trust, calibration, and when an AI assistant should escalate rather than consume expert attention on low-value hypotheses. You enjoy working alongside domain experts, stay current with developments in generative AI and human-in-the-loop methods, and communicate clearly in papers, talks, and demos.
 
 KEY RESPONSIBILITIES
-• Research methods for learning under slow HITL reward—the core problem of improving AI debugging assistants when expert verification is the only valid signal and feedback is sparse, delayed, and expensive (for example: sample-efficient RLHF, active learning, reward modeling from scarce judgments, and query strategies that prioritize high-value expert reviews)
-• Characterize human-in-the-loop debugging workflows in AMD's hardware generation process—mapping where automation ends, what experts must verify, how long feedback takes, and what signals are available before human confirmation
-• Research AI methods for expert-assisted debugging under human-only verification (for example: hypothesis generation, trace and log summarization, candidate fix ranking, and interactive refinement loops designed to minimize expert burden per iteration)
-• Design evaluation protocols for the slow-reward regime—measuring learning progress per expert hour, hypothesis quality, fix acceptance rates, and escalation accuracy; rejecting metrics that assume fast or abundant automated feedback
-• Build and study prototypes embedded in realistic debugging workflows, with structured feedback loops from hardware design, verification, and automation engineers
-• Publish and present findings at top-tier venues and contribute to internal knowledge sharing around AI-assisted debugging and learning from sparse expert feedback
+• Research methods for learning under slow human-in-the-loop reward—improving AI debugging assistants when expert verification is the only valid signal and feedback is sparse, delayed, and expensive
+• Characterize human-in-the-loop debugging workflows—mapping where automation ends, what experts must verify, how long feedback takes, and what signals are available before human confirmation
+• Research AI methods for expert-assisted debugging under human-only verification (for example: hypothesis generation, summarization, candidate fix ranking, and interactive refinement)
+• Design evaluation protocols for the slow-reward regime—measuring learning progress per expert hour and fix acceptance rates; rejecting metrics that assume fast or abundant automated feedback
+• Build and study prototypes embedded in realistic workflows, with structured feedback loops from domain experts and engineering partners
+• Publish and present findings at top-tier venues and contribute to internal knowledge sharing around AI-assisted debugging
 
 PREFERRED EXPERIENCE
-• Track record of publications at top-tier venues (for example: NeurIPS, ICLR, ICML, AAAI, CVPR, ICCV, ECCV, or similar)
+• Track record of publications at top-tier venues (for example: NeurIPS, ICLR, ICML, AAAI, or similar)
 • Demonstrated experience with learning from slow, sparse, or expensive human feedback—for example: RLHF with limited label budgets, active learning, or expert-in-the-loop evaluation
 • Demonstrated experience with human-in-the-loop ML or interactive AI systems where automated verification is unavailable or unreliable
-• Experience debugging or supporting debugging in complex engineering systems—for example: hardware generation workflows, design automation pipelines, or large-scale pre-silicon engineering codebases
+• Experience debugging or supporting debugging in complex engineering systems
 • Experience working closely with domain experts to define tasks, collect judgments, and iterate on AI-assisted workflows
-• Demonstrated experience training and applying LLMs and code models to root-cause analysis, trace interpretation, or iterative fix proposal
+• Demonstrated experience training and applying LLMs and code models to root-cause analysis or iterative fix proposal
 • Proven ability to communicate complex technical ideas through papers, presentations, demos, and written content
 
 ACADEMIC CREDENTIALS
 • Bachelor's degree in Computer Science, Computer Engineering, Electrical Engineering, or related field.
-• PhD in Computer Science, Machine Learning, Electrical Engineering, or a related field strongly preferred. Master's with an exceptional publication record in generative AI, human-in-the-loop ML, AI for code, design automation, or AI for hardware engineering will be considered.
+• PhD in Computer Science, Machine Learning, or a related field strongly preferred. Master's with an exceptional publication record in generative AI, human-in-the-loop ML, or AI for code will be considered.
 
 OUTCOMES
-Success in this role is measured by measurable reduction in expert burden across debugging and verification workflows:
-• Human debugging and verification — shorten the time experts spend on debugging and verification tasks by 50%, while maintaining correctness under human-in-the-loop verification`;
+Success in this role is measured by reducing expert burden on debugging and verification:
+• Expert workflows — shorten expert time on debugging and verification by 50%, while maintaining correctness under human-in-the-loop verification`;
 
     const toast = document.getElementById('toast');
     document.getElementById('copyBtn').addEventListener('click', async () => {
